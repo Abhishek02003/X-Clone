@@ -12,10 +12,10 @@
 </head>
 
 <body class=" bg-black text-white">
-    <div class="flex container mx-auto h-screen">
-        <div class="first w-full">
-            <div class="logo invert flex justify-end w-1/2 my-3 hover:cursor-pointer"><svg viewBox="0 0 24 24"
-                    aria-hidden="true"
+    <div class="flex container mx-auto h-screen overflow-visible">
+        <div class="first w-10 md:w-full">
+            <div class="logo invert flex justify-end xl:w-1/2 w-fit my-3 hover:cursor-pointer pr-3"><svg
+                    viewBox="0 0 24 24" aria-hidden="true"
                     class=" w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
                     <g>
                         <path
@@ -25,57 +25,424 @@
                 </svg></div>
 
             <div class="sidebar flex justify-end">
-                <ul class="flex flex-col text-2xl space-y-3 w-1/2 mr-9">
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">home</span>Home
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">search</span>Explore
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">notifications</span>Notifications
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">message</span>Messages
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">crown</span>Grok
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">communities</span>Communities
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">paid</span>Premium
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 whitespace-nowrap hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">verified</span>Verified Orgs
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">for_you</span>Profile
-                    </li>
-                    <li
-                        class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 pl-2 pr-4 hover:rounded-full hover:cursor-pointer hover:font-bold">
-                        <span class="material-symbols-outlined text-3xl">more</span>More
-                    </li>
-                </ul>
+                
+                <div class="flex flex-col">
+                    <ul class="flex flex-col text-[22px] space-y-1 w-1/2 xl:mr-13">
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold ">
+                            <span class="material-symbols-outlined text-3xl">home</span><span
+                                class="hidden xl:block">Home</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">search</span><span
+                                class="hidden xl:block">Explore</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">notifications</span><span
+                                class="hidden xl:block">Notifications</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">message</span><span
+                                class="hidden xl:block">Messages</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">crown</span><span
+                                class="hidden xl:block">Grok</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">communities</span><span
+                                class="hidden xl:block">Communities</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">paid</span><span
+                                class="hidden xl:block">Premium</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 whitespace-nowrap hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">verified</span><span
+                                class="hidden xl:block">Verified Orgs</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">for_you</span><span
+                                class="hidden xl:block">Profile</span>
+                        </li>
+                        <li
+                            class="flex items-center justify-start gap-3 hover:bg-gray-800 w-fit pt-2 pb-2 xl:pl-2 pr-4 rounded-full hover:cursor-pointer hover:font-semibold">
+                            <span class="material-symbols-outlined text-3xl">more</span><span
+                                class="hidden xl:block">More</span>
+                        </li>
+                    </ul>
+                    <div> <button
+                            class="bg-white text-black w-[90%] rounded-full pl-3.5 pr-3.5 py-3 font-bold mt-3 xl:flex flex-col hidden">Post</button>
+                    </div>
+                    <div class="flex justify-between items-center h-30 mr-4">
+                        <div class="flex gap-3">
+                            <div><img class="rounded-full w-10"
+                                    src="https://pbs.twimg.com/profile_images/1905612258262351873/Tsg8fbC1_bigger.jpg"
+                                    alt="" srcset=""></div>
+                            <div class="hidden xl:block">
+                                <div class="font-medium">Abhishek Agarwal</div>
+                                <div class="text-gray-600 text-xs">@Abhishe11252083</div>
+                            </div>
+                        </div>
+                        <div class="xl:block hidden"><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="second border border-x-gray-700 border-y-transparent w-[145%]">heljhkhhklo</div>
-        <div class="third w-[128%]">
-            <div class="search"><input
-                    class="rounded-full w-[70%] h-11 mt-2 ml-6 border border-gray-700 pl-6 placeholder:text-white place"
-                    type="search" placeholder="Search"></div>
+        <div class="second border border-x-gray-700 border-y-transparent w-[145%]">
+            <div class="top flex bg-black h-15 border-b border-gray-700 sticky top-0 z-10">
+                <div
+                    class="w-1/2 flex items-center justify-center font-semibold text-white hover:cursor-pointer hover:bg-gray-700">
+                    For
+                    You</div>
+                <div class="absolute h-1 w-[10%] bottom-0.5 left-30 rounded-full bg-blue-500"></div>
+                <div
+                    class="w-1/2 flex items-center justify-center font-semibold text-white hover:cursor-pointer hover:bg-gray-700">
+                    Following</div>
+            </div>
+            <div class="whatishapp border-b border-gray-700">
+                <div class="flex p-4 mr-8 gap-2.5 justify-center items-center">
+                    <div><img class="rounded-full w-10"
+                            src="https://pbs.twimg.com/profile_images/1905612258262351873/Tsg8fbC1_bigger.jpg" alt=""
+                            srcset=""></div>
+                    <div class="border-amber-50"><input class="w-128.5 text-xl font-light border-none outline-none"
+                            type="text" placeholder="What's happening?"></div>
+                </div>
+                <div class="flex gap-1.5 ml-14 pb-2 border-b border-gray-700 w-[87%] ">
+                    <div><span class="material-symbols-outlined text-blue-400 ml-2 text-[14px]">
+                            globe_asia
+                        </span></div>
+                    <span class="text-blue-400 font-bold  w-fit text-[14px]">Everyone can reply</span>
+                </div>
+                <div class="svgs flex justify-between w-[87%]  ml-16">
+                    <div class="flex gap-3 my-5">
+                        <div><span class="material-symbols-outlined text-blue-400">
+                                image
+                            </span></div>
+                        <div><span class="material-symbols-outlined text-blue-400">
+                                gif_box
+                            </span></div>
+                        <div><span class="material-symbols-outlined text-blue-400">
+                                crown
+                            </span></div>
+                        <div><span class="material-symbols-outlined text-blue-400">
+                                ballot
+                            </span></div>
+                        <div><span class="material-symbols-outlined text-blue-400">
+                                sentiment_satisfied
+                            </span></div>
+                        <div><span class="material-symbols-outlined text-blue-400">
+                                calendar_clock
+                            </span></div>
+                        <div><span class="material-symbols-outlined text-blue-200">
+                                location_on
+                            </span></div>
+                    </div>
+                    <div>
+                        <div> <button
+                                class="bg-slate-400 text-black w-20 rounded-full pl-3.5 pr-3.5 py-2 font-bold mt-3 flex flex-col">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-blue-500 py-3 w-full text-center border-b border-gray-700"> Show 245 posts</div>
+
+            <div
+                class="maincontent flex px-4 pt-3 gap-3 border border-x-gray-700 border-yt-transparent border-b border-gray-700">
+                <div class="leftc w-60.5"><img class="rounded-full w-10"
+                        src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_bigger.jpg"></div>
+                <div class="rightc">
+                    <div class="firstc flex justify-between ">
+                        <div class="flex gap-2">
+                            <div class="font-bold ">
+                                Narendra Modi
+                            </div>
+                            <div class="text-gray-600 text-[15px]">@narendramodi
+                                ·
+                                Aug 6</div>
+                        </div>
+                        <div><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></div>
+                    </div>
+                    <span class="content">At 9 AM tomorrow, 7th August, will inaugurate the MS Swaminathan Centenary
+                        International Conference in Delhi. Tomorrow is also his birth centenary, making the programme
+                        even more special. People around the world admire the scholarship of Dr. Swaminathan and his
+                        commitment to food security and agricultural research. Tomorrow's conference will deliberate on
+                        the important theme of 'Evergreen Revolution, The Pathway to Biohappiness.'
+                    </span>
+                    <div class="optional"></div>
+                    <div class="lsc flex justify-between text-gray-600 text-[15px] py-3">
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div><span class="material-symbols-outlined">
+                                    chat
+                                </span></div>
+                            <div>459</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-green-700">
+                            <div><span class="material-symbols-outlined">
+                                    forward
+                                </span></div>
+                            <div>2.2K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-pink-700">
+                            <div><span class="material-symbols-outlined">
+                                    favorite
+                                </span></div>
+                            <div>15K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div><span class="material-symbols-outlined">
+                                    insert_chart
+                                </span></div>
+                            <div>729K</div>
+                        </div>
+
+                        <div class="flex justify-between gap-1">
+                            <div><span class="material-symbols-outlined  hover:text-blue-700">
+                                    bookmark
+                                </span></div>
+                            <div><span class="material-symbols-outlined  hover:text-blue-700">
+                                    upload
+                                </span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="maincontent flex px-4 pt-3 gap-3 border border-x-gray-700 border-yt-transparent border-b border-gray-700">
+                <div class="leftc w-[50px] invert "><svg viewBox="0 0 24 24" aria-hidden="true"
+                        class="w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg></div>
+                <div class="rightc">
+                    <div class="firstc flex justify-between ">
+                        <div class="flex gap-2">
+                            <div class="font-bold ">
+                                Developers
+                            </div>
+                            <div class="text-gray-600 text-[15px]">@XDevelopers</div>
+                        </div>
+                        <div><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></div>
+                    </div>
+                    <span class="content">
+                        <pre>Calling all developers! 📣
+                    
+Innovate with our real-time and historical data on the X API.
+
+Get started with Pro👇</pre>
+                    </span>
+                    <div class="optional pt-3 rounded-xl">
+                        <img class="rounded-xl border z-0 border-gray-700"
+                            src="https://pbs.twimg.com/media/GdAF3TNWoAAkZAp?format=png&name=small" alt="">
+                    </div>
+                    <div class="lsc flex justify-between text-gray-600 text-[15px] py-3">
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div class="flex justify-between"><span class="material-symbols-outlined">
+                                    chat
+                                </span></div>
+                            <div>154</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-green-700">
+                            <div><span class="material-symbols-outlined">
+                                    forward
+                                </span></div>
+                            <div>1.6K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-pink-700">
+                            <div><span class="material-symbols-outlined">
+                                    favorite
+                                </span></div>
+                            <div>6K</div>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex justify-between hover:text-blue-700"><span
+                                    class="material-symbols-outlined">
+                                    insert_chart
+                                </span></div>
+                            <div>253K</div>
+                        </div>
+
+                        <div class="flex justify-between gap-1">
+                            <div class="flex justify-between hover:text-blue-700"><span
+                                    class="material-symbols-outlined">
+                                    bookmark
+                                </span></div>
+                            <div class="flex justify-between hover:text-blue-700"><span
+                                    class="material-symbols-outlined">
+                                    upload
+                                </span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="maincontent flex px-4 pt-3 gap-3 border border-x-gray-700 border-yt-transparent border-b border-gray-700">
+                <div class="leftc w-60.5"><img class="rounded-full w-10"
+                        src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_bigger.jpg"></div>
+                <div class="rightc">
+                    <div class="firstc flex justify-between ">
+                        <div class="flex gap-2">
+                            <div class="font-bold ">
+                                Narendra Modi
+                            </div>
+                            <div class="text-gray-600 text-[15px]">@narendramodi
+                                ·
+                                Aug 6</div>
+                        </div>
+                        <div><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></div>
+                    </div>
+                    <span class="content">At 9 AM tomorrow, 7th August, will inaugurate the MS Swaminathan Centenary
+                        International Conference in Delhi. Tomorrow is also his birth centenary, making the programme
+                        even more special. People around the world admire the scholarship of Dr. Swaminathan and his
+                        commitment to food security and agricultural research. Tomorrow's conference will deliberate on
+                        the important theme of 'Evergreen Revolution, The Pathway to Biohappiness.'
+                    </span>
+                    <div class="optional"></div>
+                    <div class="lsc flex justify-between text-gray-600 text-[15px] py-3">
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div><span class="material-symbols-outlined">
+                                    chat
+                                </span></div>
+                            <div>459</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-green-700">
+                            <div><span class="material-symbols-outlined">
+                                    forward
+                                </span></div>
+                            <div>2.2K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-pink-700">
+                            <div><span class="material-symbols-outlined">
+                                    favorite
+                                </span></div>
+                            <div>15K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div><span class="material-symbols-outlined">
+                                    insert_chart
+                                </span></div>
+                            <div>729K</div>
+                        </div>
+
+                        <div class="flex justify-between gap-1">
+                            <div><span class="material-symbols-outlined  hover:text-blue-700">
+                                    bookmark
+                                </span></div>
+                            <div><span class="material-symbols-outlined  hover:text-blue-700">
+                                    upload
+                                </span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div
+                class="maincontent flex px-4 pt-3 gap-3 border border-x-gray-700 border-yt-transparent border-b border-gray-700">
+                <div class="leftc w-60.5"><img class="rounded-full w-10"
+                        src="https://pbs.twimg.com/profile_images/1833509376528945157/5AeMNn9f_bigger.jpg"></div>
+                <div class="rightc">
+                    <div class="firstc flex justify-between ">
+                        <div class="flex gap-2">
+                            <div class="font-bold ">
+                                Narendra Modi
+                            </div>
+                            <div class="text-gray-600 text-[15px]">@narendramodi
+                                ·
+                                Aug 6</div>
+                        </div>
+                        <div><span class="material-symbols-outlined">
+                                more_horiz
+                            </span></div>
+                    </div>
+                    <span class="content">At 9 AM tomorrow, 7th August, will inaugurate the MS Swaminathan Centenary
+                        International Conference in Delhi. Tomorrow is also his birth centenary, making the programme
+                        even more special. People around the world admire the scholarship of Dr. Swaminathan and his
+                        commitment to food security and agricultural research. Tomorrow's conference will deliberate on
+                        the important theme of 'Evergreen Revolution, The Pathway to Biohappiness.'
+                    </span>
+                    <div class="optional"></div>
+                    <div class="lsc flex justify-between text-gray-600 text-[15px] py-3">
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div><span class="material-symbols-outlined">
+                                    chat
+                                </span></div>
+                            <div>459</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-green-700">
+                            <div><span class="material-symbols-outlined">
+                                    forward
+                                </span></div>
+                            <div>2.2K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-pink-700">
+                            <div><span class="material-symbols-outlined">
+                                    favorite
+                                </span></div>
+                            <div>15K</div>
+                        </div>
+
+                        <div class="flex justify-between hover:text-blue-700">
+                            <div><span class="material-symbols-outlined">
+                                    insert_chart
+                                </span></div>
+                            <div>729K</div>
+                        </div>
+
+                        <div class="flex justify-between gap-1">
+                            <div><span class="material-symbols-outlined  hover:text-blue-700">
+                                    bookmark
+                                </span></div>
+                            <div><span class="material-symbols-outlined  hover:text-blue-700">
+                                    upload
+                                </span></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="third w-[128%] hidden lg:block"> 
+            <div
+                class="flex items-center justify-start sticky top-2 bg-black rounded-full w-[70%] h-11 mt-2 ml-6 border border-gray-700 pl-4 placeholder:text-white text-xl">
+                <div class=" search pr-2.5 h-5"><span class="material-symbols-outlined text-xl">search</span></div>
+                <div class="search"><input type="search" placeholder="Search"></div>
+            </div>
             <div class="subscribe border border-gray-700 rounded-xl w-[70%] ml-6 mt-5 pl-4 pr-4 pt-3.5 pb-3.5">
-                <h1 class="text-3xl font-bold ">Subscribe to Premium</h1>
+                <h1 class="text-2xl font-bold pb-3 ">Subscribe to Premium</h1>
                 <div>Subscribe to unlock new features and if eligible, receive a share of revenue.</div>
                 <button class="bg-blue-500 rounded-full pl-3.5 pr-3.5 pt-1.5 pb-1.5 font-bold mt-3">Subscribe</button>
             </div>
@@ -162,25 +529,40 @@
             <div class="follow border border-gray-700 rounded-xl w-[70%] ml-6 mt-5 pl-4 pr-4 pt-3.5 pb-3.5">
                 <h1 class="text-2xl font-bold mb-4">Who to follow</h1>
                 <div class="flex justify-between items-center pt-3 pb-3">
-                    <div>
-                        <div class="font-bold">Virrendra Sehwag</div>
-                        <div class="text-gray-600 text-xs">@virendersehwag</div>
+                    <div class="flex gap-3">
+                        <div><img class="rounded-full w-10"
+                                src="https://pbs.twimg.com/profile_images/1375742677/virender_sehwag_496_259_cy_100_bigger.jpg"
+                                alt="" srcset=""></div>
+                        <div>
+                            <div class="font-bold">Virrendra Sehwag</div>
+                            <div class="text-gray-600 text-xs">@virendersehwag</div>
+                        </div>
                     </div>
                     <button
                         class="bg-white rounded-full pl-3.5 pr-3.5 pt-1.5 pb-1.5 font-medium text-black">Follow</button>
                 </div>
                 <div class="flex justify-between items-center pt-3 pb-3">
-                    <div>
-                        <div class="font-bold">President of India</div>
-                        <div class="text-gray-600 text-xs">@rashtrapatibhvn</div>
+                    <div class="flex gap-3">
+                        <div><img class="rounded-full w-10"
+                                src="https://pbs.twimg.com/profile_images/1911108245243961344/oM0-xx3m_bigger.jpg"
+                                alt="" srcset=""></div>
+                        <div>
+                            <div class="font-bold">President of India</div>
+                            <div class="text-gray-600 text-xs">@rashtrapatibhvn</div>
+                        </div>
                     </div>
                     <button
                         class="bg-white rounded-full pl-3.5 pr-3.5 pt-1.5 pb-1.5 font-medium text-black">Follow</button>
                 </div>
                 <div class="flex justify-between items-center pt-3 pb-3">
-                    <div>
-                        <div class="font-bold">Amit AmitShah</div>
-                        <div class="text-gray-600 text-xs">@AmitShah</div>
+                    <div class="flex gap-3">
+                        <div><img class="rounded-full w-10"
+                                src="https://pbs.twimg.com/profile_images/1833743527928541184/aT_uOoth_bigger.jpg"
+                                alt="" srcset=""></div>
+                        <div>
+                            <div class="font-bold">Amit AmitShah</div>
+                            <div class="text-gray-600 text-xs">@AmitShah</div>
+                        </div>
                     </div>
                     <button
                         class="bg-white rounded-full pl-3.5 pr-3.5 pt-1.5 pb-1.5 font-medium text-black">Follow</button>
@@ -189,7 +571,8 @@
             </div>
             <div class="text-slate-100 text-xs m-5 p-5">
                 <pre>Terms of Service | Privacy Policy | Cookie Policy |
-More...  © 2025 X Corp.</pre></div>
+More...  © 2025 X Corp.</pre>
+            </div>
 
 
         </div>
